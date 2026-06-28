@@ -1,0 +1,44 @@
+---
+title: "Penguin Plots"
+author: "Priyanka"
+date: "2024-03-07"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Graph displaying something
+```{r}
+plot(cars, type="o", col="green")
+
+```
+
+# Some basic formatting options
+
+in the next line, I will be starting a new paragraph. To do this, I have to end a line with two spaces.  
+Here is the new paragraph.
+
+I will be inserting italics in the next word: _beautiful_, using single underscores. Another way to write *beautiful* is to use asterisks: *beautiful*.  To apply bold, we use two asterisks: **bold is beautiful**
+
+# Penguin Plots: Practice analysis
+## Setting up my environment
+Notes: Setting up my R environment by loading the `tidyverse` and `palmerpenguins` packages:
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
